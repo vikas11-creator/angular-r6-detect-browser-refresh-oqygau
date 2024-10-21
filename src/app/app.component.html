@@ -1,0 +1,14 @@
+<p>
+	step 1- refresh in page A -> it will tell you in the dom it's a refresh state
+</p>
+<p>
+	step 2- after step 1 go to page B and back to page A. The same message spot now is telling you it's not a refresh
+	state
+	since it's a standard navigation to go to page A.
+</p>
+<nav>
+	<a routerLink="/a" routerLinkActive="active">Go to Page A</a>
+	<br />
+	<a routerLink="/b">Go to Page B</a>
+</nav>
+<router-outlet></router-outlet>
